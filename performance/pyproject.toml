@@ -10,7 +10,11 @@ python = ">=3.9,<3.11"
 pandas = "^2.2.1"
 polars = "^0.20.18"
 duckdb = "^0.10.1"
+dask = {extras = ["dataframe"], version = "^2024.4.1"}
 
+
+[tool.poetry.group.dev.dependencies]
+snakeviz = "^2.2.0"
 
 [build-system]
 requires = ["poetry-core"]
